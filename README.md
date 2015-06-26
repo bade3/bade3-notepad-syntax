@@ -23,12 +23,13 @@ $ apm install bade3-notepad-syntax
 Activate the theme by selecting the Themes section of Preferences.
 
 
-## Notes
-
-* UI Theme: Unity: https://atom.io/themes/unity-ui
-
 ##License
 
 The MIT License (MIT) - © Mohammed Eissa (bade3) - for more info see [LICENSE.md](https://github.com/BaDe3/bade3-notepad-syntax/blob/master/LICENSE.md).
+
+
+## Notes
+
+* UI Theme: Unity: https://atom.io/themes/unity-ui
 
 ######Happy Coding !!
