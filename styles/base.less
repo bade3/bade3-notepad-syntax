@@ -1,0 +1,419 @@
+@import "colors";
+
+atom-text-editor, :host {
+  background-color: @bade3-white;
+  color: @bade3-black;
+
+  .wrap-guide {
+    background-color: @dark-gray;
+  }
+
+  .indent-guide {
+    color: @bade3-light-gray;
+  }
+
+  .invisible-character {
+    color: @gray;
+  }
+
+  .gutter {
+    background-color: @bade3-white;
+    color: @bade3-gray;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @bade3-light-blue;
+        color: @bade3-gray;
+      }
+
+      &.cursor-line-no-selection {
+        color: @bade3-gray;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @bade3-black;
+  }
+
+  .cursor {
+    color: @bade3-black;
+  }
+
+  .selection .region {
+    background-color: @bade3-very-light-gray; //bade3
+  }
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @light-gray;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid white;
+}
+
+.comment {
+  color: @bade3-green;
+
+  &.source.php {color: @bade3-black;} //bade3
+
+}
+
+.entity {
+  &.name.type {
+    color: @light-orange;
+  }
+
+  &.other.inherited-class {
+    color: @green;
+  }
+}
+
+.keyword {
+  color: @purple;
+
+  &.css {color: @bade3-purple;} //bade3
+
+  &.control {
+    color: @purple;
+
+    &.js {color:@bade3-dark-blue;font-style: italic;} //bade3
+
+    &.php {color:@bade3-blue;} //bade3
+
+    &.css {color:@bade3-purple;} //bade3
+
+  }
+
+  &.operator {
+    color: @bade3-black;
+
+    &.php {color:@bade3-purple;}
+
+  }
+
+  &.other.special-method {
+    color: @blue;
+  }
+
+  &.other.unit {
+    color: @orange;
+
+    &.css {color:@bade3-blue;} //bade3
+
+  }
+
+  &.other.important.css {color: @bade3-red;} //bade3
+
+}
+
+.storage {
+  color: @purple;
+
+  &.js {color: @bade3-dark-blue;font-style: italic;} //bade3
+
+  &.php {color: @bade3-blue;} //bade3
+
+}
+
+.constant {
+  color: @orange;
+
+  &.character.escape {
+    color: @cyan;
+
+    &.css {color: @bade3-gray;} //bade3
+
+  }
+
+  &.numeric {
+    color: @orange;
+
+    &.js {color: @bade3-orange;} //bade3
+
+  }
+
+  &.other.color {
+    color: @cyan;
+  }
+
+  &.other.symbol {
+    color: @green;
+  }
+
+  &.js {color: @bade3-black;} //bade3
+
+  &.php {color: @bade3-blue;} //bade3
+
+  &.css , &.other.color.css {color: @bade3-blue;} //bade3
+
+}
+
+.variable {
+  color: @red;
+
+  &.interpolation {
+    color: darken(@red, 10%);
+  }
+
+  &.parameter.function {
+    color: @bade3-black;
+
+    &.js {color: @bade3-brown;} //bade3
+
+  }
+
+  &.php {color: @bade3-dark-blue;} //bade3
+
+  &.property.php {color: @bade3-black;} //bade3
+
+  &.js {color: @bade3-dark-blue;} //bade3
+
+}
+
+.invalid.illegal {
+  background-color: @red;
+  color: @bade3-light-blue;
+}
+
+.string {
+  color: @green;
+
+  &.js {color: @bade3-gray;} //bade3
+
+  &.html {color: @bade3-dark-blue;} //bade3
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded {
+      color: @orange;
+    }
+  }
+
+  &.other.link {
+    color: @red;
+  }
+
+  &.quoted.php {color: @bade3-gray;}
+
+}
+
+.punctuation {
+  &.definition {
+    /*
+    &.comment {
+      color: @light-gray;
+    }
+    */
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+      color: @bade3-black;
+    }
+
+    &.heading,
+    &.identity {
+      color: @blue;
+    }
+
+    &.bold {
+      color: @light-orange;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @purple;
+      font-style: italic;
+    }
+
+    &.variable.php {color: @bade3-dark-blue;} //bade3
+
+  }
+
+  &.section.embedded {
+    color: @bade3-red; //bade3
+  }
+
+}
+
+.meta.html .punctuation.tag {color: @bade3-dark-pink;} //bade3
+
+.source.js .punctuation.tag {color: @bade3-blue;} //bade3
+
+.source.php .string.punctuation {color: @bade3-gray;} //bade3
+
+.css .punctuation.section {color: @bade3-dark-pink;} //bade3
+
+.css.string {color: @bade3-gray;} //bade3
+
+.support {
+  &.class {
+    color: @light-orange;
+
+    &.js {color: @bade3-black;} //bade3
+
+  }
+
+  &.function  {
+    color: @cyan;
+
+    &.any-method {
+      color: @blue;
+    }
+
+    &.js {color: @bade3-black;} //bade3
+
+    &.php {color: @bade3-blue;} //bade3
+
+    &.css {color: @bade3-black;} //bade3
+
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @blue;
+
+    &.js {color: @bade3-black;} //bade3
+
+  }
+
+  &.name.class, &.name.type.class {
+    color: @light-orange;
+  }
+
+  &.name.section {
+    color: @blue;
+  }
+
+  &.name.tag {
+    color: @red;
+  }
+
+  &.name.tag.html {color: @bade3-dark-pink;} //bade3
+
+  &.name.tag.script {color: @bade3-blue;} //bade3
+
+  &.name.tag.css {color: @bade3-dark-pink;} //bade3
+
+
+  &.other.attribute-name {
+    color: @bade3-black; //bade3
+
+    &.id {
+      color: @blue;
+
+      &.css {color: @bade3-black;} //bade3
+
+    }
+
+    &.css {color: @bade3-dark-pink;}  //bade3
+
+    &.html {color: @bade3-brown;} //bade3
+
+  }
+}
+
+.meta {
+  &.class {
+    color: @light-orange;
+  }
+
+  &.link {
+    color: @orange;
+  }
+
+  &.require {
+    color: @blue;
+  }
+
+  &.selector {
+    color: @purple;
+  }
+
+  &.separator {
+    background-color: @gray;
+    color: @bade3-black;
+  }
+
+  &.embedded.line {background-color: @bade3-very-2-light-gray;} //bade3
+
+  &.property-name.css {color: @bade3-dark-blue;}  //bade3
+
+  &.at-rule.css .constant, &.at-rule.css .keyword.unit {color: @bade3-brown;} //bade3
+
+}
+
+.none {
+  color: @bade3-black;
+}
+
+.markup {
+  &.bold {
+    color: @orange;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @purple;
+  }
+
+  &.deleted {
+    color: @red;
+  }
+
+  &.italic {
+    color: @purple;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @blue;
+  }
+
+  &.inserted {
+    color: @green;
+  }
+
+  &.list {
+    color: @red;
+  }
+
+  &.quote {
+    color: @orange;
+  }
+
+  &.raw.inline {
+    color: @green;
+  }
+}
+
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @green;
+  }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}
+
+.bracket-matcher .region { //bade3
+  position: absolute;
+  background-color: #cca8ff;
+}
