@@ -1,5 +1,6 @@
 # bade3 notepad syntax theme
 
+A clean light syntax theme for the atom text editor, inspired by the "notepad++" text theme.
 
 ## HTML + PHP
 
@@ -8,3 +9,22 @@
 ## CSS
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/BaDe3/bade3-notepad-syntax/master/bade3-notepad-2.jpg)
+
+##Install
+
+* From the command line:
+
+```bash
+$ apm install bade3-notepad-syntax
+```
+
+* Alternatively, open Atom Preferences, select Themes > Search for bade3-notepad-syntax, then Install.
+
+Activate the theme by selecting the Themes section of Preferences.
+
+
+## Notes
+
+* UI Theme: Unity: https://atom.io/themes/unity-ui
+
+Happy Coding !!
