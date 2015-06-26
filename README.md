@@ -4,11 +4,11 @@ A clean light syntax theme for the atom text editor, inspired by the "notepad++"
 
 ## HTML + PHP
 
-![A screenshot of your theme](https://github.com/BaDe3/bade3-notepad-syntax/blob/master/bade3-notepad-1.png)
+![A screenshot of your theme](https://raw.githubusercontent.com/BaDe3/bade3-notepad-syntax/master/bade3-notepad-1.png)
 
 ## CSS
 
-![A screenshot of your theme](https://github.com/BaDe3/bade3-notepad-syntax/blob/master/bade3-notepad-2.png)
+![A screenshot of your theme](https://raw.githubusercontent.com/BaDe3/bade3-notepad-syntax/master/bade3-notepad-2.png)
 
 ##Install
 
