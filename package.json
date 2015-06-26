@@ -10,7 +10,10 @@
     "notepad",
     "bade3"
   ],
-  "repository": "https://github.com/bade3/bade3-notepad-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bade3/bade3-notepad-syntax"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
