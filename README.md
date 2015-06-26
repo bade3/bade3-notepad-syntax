@@ -18,7 +18,7 @@ A clean light syntax theme for the atom text editor, inspired by the "notepad++"
 $ apm install bade3-notepad-syntax
 ```
 
-* Alternatively, open Atom Preferences, select Themes > Search for bade3-notepad-syntax, then Install.
+* Alternatively, open Atom Preferences, select **Themes > Search for bade3-notepad-syntax,** then Install.
 
 Activate the theme by selecting the Themes section of Preferences.
 
@@ -31,4 +31,4 @@ Activate the theme by selecting the Themes section of Preferences.
 
 The MIT License (MIT) - © Mohammed Eissa (bade3) - for more info see [LICENSE.md](https://github.com/BaDe3/bade3-notepad-syntax/blob/master/LICENSE.md).
 
-Happy Coding !!
+######Happy Coding !!
